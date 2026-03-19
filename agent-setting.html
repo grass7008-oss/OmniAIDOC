@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>Agent 角色與知識管理 - OmniAI</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 30px; color: #333; }
+        .section { background: #fff; border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+        h2 { color: #2c3e50; border-left: 5px solid #3498db; padding-left: 10px; }
+        .tag { background: #e8f4fd; color: #2b7de9; padding: 2px 8px; border-radius: 4px; font-size: 0.9em; }
+        .back { text-decoration: none; color: #666; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back">← 返回首頁</a>
+    <h1>🤖 Agent 角色與知識管理</h1>
+
+    <div class="section">
+        <h2>1. Agent 角色設定</h2>
+        <ul>
+            <li><strong>指令定義</strong>：明確告知 AI 它是什麼助理（例如：食藥署助手）。</li>
+            <li><strong>任務範疇</strong>：限制 AI 僅能根據分配的內容進行回答。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>2. 大腦與知識庫設定 (核心)</h2>
+        <p>這些參數決定了 AI 的聰明程度：</p>
+        <ul>
+            <li><span class="tag">Agent 類型</span>：選擇「本地知識庫」。</li>
+            <li><span class="tag">歷史對話數</span>：AI 的短期記憶（建議設定 20）。</li>
+            <li><span class="tag">重排模型 (Rerank)</span>：AI 的複查員，確保資料相關性。</li>
+            <li><span class="tag">分塊大小</span>：長文件切分大小（建議 1000 字）。</li>
+        </ul>
+    </div>
+</body>
+</html>
